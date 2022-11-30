@@ -1,12 +1,10 @@
-# Node Thermal Printer
-Node.js module for EPSON, Tanca and STAR thermal printers command line printing.
-
-[![Join the chat at https://gitter.im/Klemen1337/node-thermal-printer](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/Klemen1337/node-thermal-printer?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
-
+# Javascript Thermal Printer
+Javascript module thermal printers command line printing.
+Its forked node-thermal-printer repository and modified for used in Javascript and with bluetooth printers
 
 ### Installation
 ```bash
-$ npm install node-thermal-printer
+$ npm install js-thermal-printer
 ```
 
 
@@ -78,11 +76,11 @@ printer.code128("Code128");                                 // Print code128 bar
 printer.printQR("QR CODE");                                 // Print QR code
 await printer.printImage('./assets/olaii-logo-black.png');  // Print PNG image
 
-printer.clear();                                              // Clears printText value
-printer.getText();                                            // Returns printer buffer string value
-printer.getBuffer();                                          // Returns printer buffer
-printer.setBuffer(newBuffer);                                 // Set the printer buffer to a copy of newBuffer
-printer.getWidth();                                           // Get number of characters in one line
+print.clear();                                              // Clears printText value
+print.getText();                                            // Returns printer buffer string value
+print.getBuffer();                                          // Returns printer buffer
+print.setBuffer(newBuffer);                                 // Set the printer buffer to a copy of newBuffer
+print.getWidth();                                           // Get number of characters in one line
 ```
 
 ### How to run examples (Set to EPSON)
@@ -112,15 +110,16 @@ node examples/example.js '\\.\COM1'
 #### System Printer Drivers
 When using a system printer, you need to provide the driver.
 Use electron-printer or printer driver:
+
 ```js
-const ThermalPrinter = require("node-thermal-printer").printer;
-const PrinterTypes = require("node-thermal-printer").types;
+const ThermalPrinter = require("utils/js-thermal-printer/node-thermal-printer").printer;
+const PrinterTypes = require("utils/js-thermal-printer/node-thermal-printer").types;
 const electron = typeof process !== 'undefined' && process.versions && !!process.versions.electron;
 
 let printer = new ThermalPrinter({
-  type: PrinterTypes.EPSON,
-  interface: 'printer:My Printer',
-  driver: require(electron ? 'electron-printer' : 'printer')
+    type: PrinterTypes.EPSON,
+    interface: 'printer:My Printer',
+    driver: require(electron ? 'electron-printer' : 'printer')
 });
 ```
 
@@ -300,8 +299,7 @@ printer.printBarcode(data, type, settings);
 - Rongta RP326-USE
 - EPSON TM-T88V
 - Posman BTP-R880NP (Type "epson")
-- EPSON TM-T20X
-- EPSON TM-T82IIIL
+
 
 ### Character sets
 - PC437_USA
