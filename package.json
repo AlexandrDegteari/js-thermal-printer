@@ -1,6 +1,6 @@
 {
   "name": "js-thermal-printer",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Print on Epson and Star thermal printers with JS",
   "main": "node-thermal-printer.js",
   "repository": {
@@ -20,13 +20,13 @@
   "homepage": "https://github.com/AlexandrDegteari/js-thermal-printer.git",
   "dependencies": {
     "@capacitor-community/bluetooth-le": "^2.0.1",
+    "@capacitor/core": "^4.5.0",
     "@vendus/sockets-for-cordova": "^1.7.2",
     "assert": "^2.0.0",
     "iconv-lite": "0.5.0",
     "stream": "^0.0.2",
     "unorm": "1.4.1",
     "util": "^0.12.5",
-    "web-fs": "^2.1.0",
     "write-file-queue": "0.0.1"
   },
   "devDependencies": {
