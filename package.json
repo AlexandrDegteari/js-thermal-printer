@@ -1,25 +1,23 @@
 {
   "name": "js-thermal-printer",
   "version": "1.0.0",
-  "description": "Print on Epson and Star thermal printers with NodeJS",
-  "main": "js-thermal-printer.js",
+  "description": "Print on Epson and Star thermal printers with JS",
+  "main": "node-thermal-printer.js",
   "repository": {
     "type": "git",
-    "url": "https://github.com/Klemen1337/node-thermal-printer"
+    "url": "https://github.com/AlexandrDegteari/js-thermal-printer.git"
   },
   "keywords": [
     "thermal printer",
     "thermal",
     "printer",
     "epson",
-    "star"
+    "star",
+    "bluetooth thermal printer"
   ],
-  "author": "Klemen Kastelic <klemen.kast@gmail.com> (http://kastelic.net/)",
+  "author": "Degteari Alexandr <alexdevelopermd@gmail.com> (https://appflex.dev)",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/Klemen1337/node-thermal-printer/issues"
-  },
-  "homepage": "https://github.com/Klemen1337/node-thermal-printer",
+  "homepage": "https://github.com/AlexandrDegteari/js-thermal-printer.git",
   "dependencies": {
     "iconv-lite": "0.5.0",
     "pngjs": "3.3.3",
